@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main, staging ]
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check HTML links and images
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "./"
+          # Ignore external links for speed/stability in PR checks, focus on internal broken links/images
+          arguments: "--disable-external"
