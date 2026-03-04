@@ -118,8 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function loadAdSense() {
-        // Placeholder: Insert AdSense script here after approval
-        console.log('[Therian] AdSense: consent granted, ready to load ad scripts.');
+        // AdSense script is loaded globally via <head> (async).
+        // This function marks that the user has granted consent for advertising cookies.
+        // No additional script injection needed.
     }
 
     function loadAnalytics() {
