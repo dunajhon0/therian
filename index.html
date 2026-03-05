@@ -47,7 +47,7 @@
     <!-- ========== HEADER / NAV ========== -->
     <header class="header" id="top">
         <div class="container">
-            <a href="#top" class="logo">Therian<span>Atlas</span></a>
+            <a href="index.html" class="logo">Therian<span>Atlas</span></a>
             <nav>
                 <ul class="nav-links" role="navigation" aria-label="Navegación principal">
                     <li><a href="#que-es">Qué es</a></li>
@@ -76,8 +76,8 @@
             <p class="intro-text">Explora con curiosidad y respeto un espacio donde la conexión con la naturaleza y la
                 identidad se encuentran.</p>
             <div class="hero-ctas">
-                <a href="#que-es" class="btn btn-primary">Explorar la Guía ↓</a>
-                <a href="#faq" class="btn btn-secondary">Preguntas Frecuentes</a>
+                <a href="#encuesta" class="btn btn-quiz" id="btn-descubre-nivel">👉 Descubre tu nivel</a>
+                <a href="#que-es" class="btn btn-secondary">Explorar la Guía ↓</a>
             </div>
 
             <div class="gpt-box reveal"
@@ -97,10 +97,169 @@
         </div>
     </section>
 
-    <!-- ========== AD SLOT: After Hero ========== -->
-    <div class="ad-slot ad-slot--leaderboard" aria-hidden="true">
-        <p>[Espacio publicitario — Leaderboard 728×90]</p>
-    </div>
+
+    <!-- ========== ENCUESTA: ¿Qué sabes sobre el mundo Therian? ========== -->
+    <section id="encuesta" class="quiz-section" aria-label="Encuesta de conocimiento therian">
+        <div class="container">
+            <div class="quiz-header text-center">
+                <span class="section-badge reveal">Test interactivo</span>
+                <h2 class="section-title reveal">¿Qué sabes sobre el mundo Therian?</h2>
+                <p class="section-subtitle reveal">Antes de profundizar, descubre tu nivel de conocimiento sobre
+                    la <strong>therianthropy</strong>, la <strong>identidad therian</strong> y la comunidad. Sin
+                    presión — es solo para orientarte.</p>
+            </div>
+
+            <!-- Formulario del quiz -->
+            <form class="quiz-form" id="quiz-form" novalidate>
+
+                <!-- P1 -->
+                <fieldset class="quiz-question reveal" data-question="1">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">1</span>¿Qué es un therian?</legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q1" value="0"> Un personaje de videojuego
+                            con forma animal</label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="0"> Una persona que se disfraza
+                            de animal</label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="2"> Alguien que se identifica
+                            profundamente con un animal como parte de su identidad</label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="1"> Un fan del anime con
+                            personajes animales</label>
+                    </div>
+                </fieldset>
+
+                <!-- P2 -->
+                <fieldset class="quiz-question reveal" data-question="2">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">2</span>¿Qué significa el símbolo θΔ
+                        (Theta-Delta)?</legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q2" value="0"> Es el logo de una marca de
+                            ropa</label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="1"> Es un símbolo matemático sin
+                            relación comunitaria</label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="2"> Es uno de los símbolos más
+                            reconocidos de la identidad therian</label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="0"> Es el símbolo de la
+                            comunidad furry</label>
+                    </div>
+                </fieldset>
+
+                <!-- P3 -->
+                <fieldset class="quiz-question reveal" data-question="3">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">3</span>¿Son lo mismo la comunidad furry y la
+                        therian?</legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q3" value="0"> Sí, son exactamente lo
+                            mismo</label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="2"> No: la furry es de interés
+                            artístico; la therian es de identidad personal</label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="1"> Son parecidas pero la
+                            therian es más moderna</label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="0"> La therian es una
+                            subcategoría de la furry</label>
+                    </div>
+                </fieldset>
+
+                <!-- P4 -->
+                <fieldset class="quiz-question reveal" data-question="4">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">4</span>¿Dónde surgió la comunidad therian?
+                    </legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q4" value="1"> En TikTok a mediados de los
+                            2010</label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="0"> En una convención de manga
+                            en Japón</label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="2"> En grupos de Usenet
+                            (alt.horror.werewolves) a principios de los 90</label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="0"> En Reddit hacia el año
+                            2010</label>
+                    </div>
+                </fieldset>
+
+                <!-- P5 -->
+                <fieldset class="quiz-question reveal" data-question="5">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">5</span>¿Qué es el «teriotipo» (theriotype)?
+                    </legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q5" value="0"> El disfraz o accesorio
+                            animal que usa un therian</label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="2"> El animal con el que un
+                            therian se identifica a nivel personal</label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="1"> El animal favorito de una
+                            persona</label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="0"> Una mascota virtual en un
+                            videojuego</label>
+                    </div>
+                </fieldset>
+
+                <!-- P6 -->
+                <fieldset class="quiz-question reveal" data-question="6">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">6</span>¿La therianthropy es un trastorno
+                        mental?</legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q6" value="0"> Sí, aparece en el
+                            DSM-5</label>
+                        <label class="quiz-option"><input type="radio" name="q6" value="1"> Depende del caso, puede
+                            serlo</label>
+                        <label class="quiz-option"><input type="radio" name="q6" value="2"> No, es una experiencia de
+                            identidad personal, no un diagnóstico clínico</label>
+                        <label class="quiz-option"><input type="radio" name="q6" value="0"> Sí, pero solo en menores de
+                            edad</label>
+                    </div>
+                </fieldset>
+
+                <!-- P7 -->
+                <fieldset class="quiz-question reveal" data-question="7">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">7</span>¿Qué es el «mental shift» en el
+                        contexto therian?</legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q7" value="0"> Una técnica de meditación
+                            budista</label>
+                        <label class="quiz-option"><input type="radio" name="q7" value="0"> Transformarse físicamente en
+                            un animal</label>
+                        <label class="quiz-option"><input type="radio" name="q7" value="1"> Un cambio de humor
+                            repentino</label>
+                        <label class="quiz-option"><input type="radio" name="q7" value="2"> Un estado en que la
+                            mentalidad o perspectiva del teriotipo se intensifica</label>
+                    </div>
+                </fieldset>
+
+                <!-- P8 -->
+                <fieldset class="quiz-question reveal" data-question="8">
+                    <legend class="quiz-q-text"><span class="quiz-q-num">8</span>¿Cuál de estas plataformas impulsó más
+                        visibilidad therian desde 2020?</legend>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q8" value="1"> Facebook</label>
+                        <label class="quiz-option"><input type="radio" name="q8" value="2"> TikTok</label>
+                        <label class="quiz-option"><input type="radio" name="q8" value="0"> LinkedIn</label>
+                        <label class="quiz-option"><input type="radio" name="q8" value="1"> Twitter / X</label>
+                    </div>
+                </fieldset>
+
+                <div class="quiz-submit-wrap text-center reveal">
+                    <p class="quiz-hint">Responde todas las preguntas y descubre tu nivel 🐾</p>
+                    <button type="submit" class="btn btn-primary quiz-submit-btn" id="quiz-submit-btn">Ver mi resultado
+                        ✨</button>
+                </div>
+            </form>
+
+            <!-- Resultado -->
+            <div class="quiz-result" id="quiz-result" aria-live="polite" hidden>
+                <div class="quiz-result-inner">
+                    <div class="quiz-result-icon" id="quiz-result-icon">🌱</div>
+                    <h3 class="quiz-result-level" id="quiz-result-level">Explorador Inicial</h3>
+                    <p class="quiz-result-desc" id="quiz-result-desc"></p>
+                    <div class="quiz-score-bar-wrap">
+                        <div class="quiz-score-bar" id="quiz-score-bar"></div>
+                    </div>
+                    <p class="quiz-score-label" id="quiz-score-label"></p>
+                    <div class="quiz-result-actions">
+                        <a href="#que-es" class="btn btn-primary" id="quiz-cta-btn">Explorar contenido recomendado ↓</a>
+                        <button class="btn btn-outline" id="quiz-retry-btn" type="button">Volver a intentarlo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ========== QUÉ ES THERIAN ========== -->
     <section id="que-es" class="section-alt">
@@ -261,10 +420,6 @@
         </div>
     </section>
 
-    <!-- ========== AD SLOT: Mid Content ========== -->
-    <div class="ad-slot ad-slot--rectangle" aria-hidden="true">
-        <p>[Espacio publicitario — Rectangle 300×250]</p>
-    </div>
 
     <!-- ========== TIPOS DE THERIAN / GALERÍA ========== -->
     <section id="tipos" class="section-alt">
@@ -663,10 +818,6 @@
 
 
 
-    <!-- ========== AD SLOT: Before Footer ========== -->
-    <div class="ad-slot ad-slot--leaderboard" aria-hidden="true">
-        <p>[Espacio publicitario — Leaderboard 728×90]</p>
-    </div>
 
 
 
