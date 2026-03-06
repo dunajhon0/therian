@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto — TherianAtlas</title>
+    <meta name="description" content="Formulario de contacto para consultas sobre privacidad, uso de cookies o el contenido de TherianAtlas.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .legal-page {
+            padding: 120px 20px 60px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legal-page h1 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--forest-deep);
+            margin-bottom: 8px;
+        }
+
+        .legal-page p {
+            font-size: 0.92rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .legal-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-family: var(--font-ui);
+            font-size: 0.85rem;
+            color: var(--forest-green);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: #fff;
+            padding: 30px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-form label {
+            font-family: var(--font-ui);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--forest-deep);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-ui);
+            background: var(--mist);
+        }
+
+        .contact-form button {
+            background: var(--forest-green);
+            color: white;
+            padding: 14px 24px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background var(--transition);
+        }
+
+        .contact-form button:hover {
+            background: var(--forest-deep);
+        }
+
+        .recaptcha-text {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+    <!-- Google AdSense account verification -->
+    <meta name="google-adsense-account" content="ca-pub-3779816940145698">
+    <!-- Google AdSense script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3779816940145698"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Therian<span>Atlas</span></a>
+        </div>
+    </header>
+
+    <main class="legal-page">
+        <a href="index.html" class="legal-back">← Volver a la página principal</a>
+        <h1>Contacto</h1>
+        <p>Si tienes dudas sobre nuestra política de privacidad, el uso de cookies o el contenido de la web, escríbenos a través de este formulario.</p>
+
+        <form class="contact-form" action="https://formsubmit.co/dunajhon0@gmail.com" method="POST">
+            <!-- FormSubmit setup to prevent captcha on their side (optional, using default text is ok but we need action) -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://therian.dunajhon.com/index.html">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            <p class="recaptcha-text">Este sitio está protegido por reCAPTCHA y se aplican la Política de Privacidad y los Términos de Servicio de Google.</p>
+        </form>
+    </main>
+
+    <footer class="footer" style="margin-top:40px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024–2026 TherianAtlas. <a href="index.html">Inicio</a> · <a href="privacidad.html">Privacidad</a>
+                    · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso Legal</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
